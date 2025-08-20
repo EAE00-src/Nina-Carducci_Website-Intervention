@@ -12,7 +12,7 @@
 	<meta property="og:site_name" content="Photographe Nina Carducci | Photographie Professionelle à Bordeaux">
 	<meta property="og:description" content="Professional photographer in Bordeaux, France, Nina Carducci captures weddings, portraits, and live events with creativity, passion, and a sharp eye for detail.">
 	<!--Twitter Cards-->
-	<meta name="twitter:card" content="">
+	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Photographe Nina Carducci | Photographie Professionelle a Bordeaux">
 	<meta name="twitter:description" content="Professional photographer in Bordeaux, France, Nina Carducci captures weddings, portraits, and live events with creativity, passion, and a sharp eye for detail.">
 	<!--Google Fonts links-->
@@ -20,8 +20,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 	<!--Local CSS-->
-	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/bootstrap/bootstrap-reduct.min.css">
-	<link rel="stylesheet" href="./assets/style-reduct.min.css">
+	<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="./assets/bootstrap/bootstrap.auto-reduct.min.css">
+	<link rel="preload" as="style" onload="this.rel='stylesheet'" href="./assets/style-min.css">
+	<link rel="stylesheet" href="./assets/style-min.css">
 	<!--JS Script loading-->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script defer src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
@@ -63,9 +64,10 @@
 </head>
 <body>
 <main>
-<header class="top-header">
+<header>
+<section class="top-header">
 	<h1 class="name">Nina Carducci</h1>
-	<div class="nav">   
+	<nav class="nav">   
 		<ul>
 			<li><a href="#about">À propos</a></li>
 			<li><a href="#gallery">Galerie</a></li>
@@ -73,8 +75,8 @@
 			<li><a href="#contact">Contact</a></li>
 			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" title="Instagram - Nina Carducci"><img src="assets/images/instagram.png" alt="Instagram logo"></a></li>
 		</ul>
-	</div>
-</header>
+	</nav>
+</section>
 <section id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -85,7 +87,7 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-compressed.webp" class="d-block w-100" alt="Photo of a businessman walking on a pedestrian crossing.">
+				<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash-compressedplus.webp" class="d-block w-100" alt="Photo of a businessman walking on a pedestrian crossing.">
 			</div>
 			<div class="carousel-item">
 				<img loading="lazy" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash-compressed.webp" class="d-block w-100" alt="A wide shot of concertgoers smiling, having fun at a concert hosted by musician Nicholas Green.">
@@ -104,9 +106,10 @@
 		</button>
 	</div>
 </section>
+</header>
 <section id="about">
 	<div class="picture left">
-		<img loading="lazy" src="./assets/images/nina-compressed.webp" width="560" height="558" style="max-width: 100%; height: auto;" alt="Image of Photographer, Nina Carducci">
+		<img loading="lazy" src="./assets/images/nina-compressed.webp" width="560" height="558" style="max-width: 100%; height: auto;" alt="Photographer, Nina Carducci">
 	</div>
 	<div id="about-me">
 		<h2 class="about-me__title">A propos de moi</h2>
@@ -124,9 +127,9 @@
 			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-compressed.webp" alt="A woman smiling during a meeting, looking to the left."/>
 			<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash-compressed.webp" alt="A close-up photo of two people's hands, their fingers brushing closely."/>
 			<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash-compressed.webp" alt="A close-up portrait photo of Ade Tunji with his eyes closed."/>
-			<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-compressed.webp" alt="Photograph by Nina Carducci, capturing the moment of a happy newlywed couple as they walk past palm trees in the background."/>
+			<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash-compressed.webp" alt="A happy newlywed couple walking past palm trees in the background."/>
 			<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-compressed.webp" alt="Portrait photograph of a woman with glasses touching a fence in the foreground."/>
-			<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-compressed.webp" alt="Photograph of a concert performance by musician Austin Neill, an arm raised in the air as pyrotechnical effects go off."/>
+			<img data-gallery-tag="Concert" class="gallery-item" loading="lazy" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash-compressed.webp" alt="A concert performance by musician Austin Neill, his arms are raised as pyrotechnical effects go off."/>
 			<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash-compressed.webp" alt="Photo of a woman sitting at her desk, laughing and looking to the right."/>
 		</div>
 	</div>
